@@ -1,0 +1,570 @@
+﻿<svg version="1.1" baseProfile="full" width="1456.0" height="1398.0" viewbox="0 0 1456 1398" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+	<desc >[&lt;class&gt;Program
+	]
+	[&lt;class&gt;Person
+	|
+	ID: Int32
+	|
+	get_ID()
+	set_ID()
+	]
+	[&lt;class&gt;Teacher
+	|
+	Subjects: Subject[]
+	ID: Int32
+	|
+	get_Subjects()
+	set_Subjects()
+	]
+	[Person]&lt;:-[Teacher]
+	[Teacher]-&gt;[Subject]
+	[&lt;class&gt;Professor
+	|
+	Courses: String[]
+	Subjects: Subject[]
+	ID: Int32
+	|
+	get_Courses()
+	set_Courses()
+	]
+	[Teacher]&lt;:-[Professor]
+	[&lt;class&gt;Student
+	|
+	Name: Int32
+	Address: Address
+	Subjects: Subject[]
+	ID: Int32
+	|
+	get_Name()
+	set_Name()
+	get_Address()
+	set_Address()
+	get_Subjects()
+	set_Subjects()
+	]
+	[Person]&lt;:-[Student]
+	[Student]-&gt;[Address]
+	[Student]-&gt;[Subject]
+	[&lt;class&gt;RemoteStudent
+	|
+	SourceSchool: String
+	Name: Int32
+	Address: Address
+	Subjects: Subject[]
+	ID: Int32
+	|
+	get_SourceSchool()
+	set_SourceSchool()
+	]
+	[Student]&lt;:-[RemoteStudent]
+	[&lt;class&gt;Address
+	|
+	Street: String
+	City: String
+	ZIP: Int32
+	|
+	get_Street()
+	set_Street()
+	get_City()
+	set_City()
+	get_ZIP()
+	set_ZIP()
+	]
+	[&lt;class&gt;Subject
+	|
+	Name: String
+	Students: Student[]
+	Gradebook: Gradebook
+	|
+	get_Name()
+	set_Name()
+	get_Students()
+	set_Students()
+	get_Gradebook()
+	set_Gradebook()
+	]
+	[Subject]-&gt;[Student]
+	[Subject]-&gt;[Gradebook]
+	[&lt;class&gt;Gradebook
+	|
+	Grades: Dictionary`2
+	|
+	get_Grades()
+	set_Grades()
+	]
+	[Gradebook]-&gt;[Student]
+	[&lt;class&gt;StudentRecords
+	|
+	Grades: List`1
+	|
+	get_Grades()
+	set_Grades()
+	]
+	[StudentRecords]-&gt;[Grade]
+	[&lt;class&gt;Grade
+	|
+	DateTime: DateTime
+	Value: Int32
+	|
+	get_DateTime()
+	set_DateTime()
+	get_Value()
+	set_Value()
+	]
+	[&lt;class&gt;DiagramPersistence
+	|
+	SaveSvgToFile()
+	]
+	[&lt;class&gt;KrokiClient
+	|
+	GenerateDiagramAsync()
+	]
+	[&lt;class&gt;ReflectionTools
+	|
+	AnalyzeAssembly()
+	IsRelationshipInherited()
+	]</desc>
+	<g stroke-width="1.0" text-align="left" font="12pt Helvetica, Arial, sans-serif" font-size="12pt" font-family="Helvetica" font-weight="normal" font-style="normal">
+		<g font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" stroke="#33322E">
+			<g stroke="transparent" fill="transparent">
+				<rect x="0.0" y="0.0" height="1398.0" width="1456.0" stroke="none"></rect>
+			</g>
+			<g transform="translate(28.5, 8)" fill="#33322E">
+				<g transform="translate(20, 20)" fill="#33322E" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal">
+					<path d="M237.9 113.5 L225.75 128 L225.75 148 L225.8 148.0 " fill="none"></path>
+					<path d="M242.0 117.0 L237.9 113.5 L233.8 110.1 L246.5 103.3 Z"></path>
+					<path d="M141.3 316.8 L109 347 L109 360.3333333333333 L109.0 360.3 " fill="none"></path>
+					<path d="M103.7 353.7 L109.0 360.3 L114.3 353.7 L109.0 367.0 Z"></path>
+					<path d="M320.0 325.9 L342.5 347 L342.5 397 L342.5 397.0 " fill="none"></path>
+					<path d="M323.6 322.0 L320.0 325.9 L316.3 329.8 L310.3 316.8 Z"></path>
+					<path d="M341.8 76.3 L467 128 L467 237.5 L467 237.5 L467 347 L467 347 L467 494 L467 494 L467 641 L467 641 L467 715 L467 715 L467 789 L467 789 L256.5 898.6871838111299 L256.5 898.7 " fill="none"></path>
+					<path d="M343.9 71.3 L341.8 76.3 L339.8 81.2 L329.5 71.2 Z"></path>
+					<path d="M114.1 1078.0 L105.75 1098 L105.75 1124.3333333333333 L105.8 1124.3 " fill="none"></path>
+					<path d="M100.4 1117.7 L105.8 1124.3 L111.1 1117.7 L105.8 1131.0 Z"></path>
+					<path d="M256.5 859.9 L329.5 789 L329.5 715 L329.5 715 L329.5 641 L329.5 641 L223.5470019622523 570.3646679748348 L223.5 570.4 " fill="none"></path>
+					<path d="M232.1 569.6 L223.5 570.4 L226.1 578.5 L218.0 566.7 Z"></path>
+					<path d="M265.2 1052.9 L304.25 1098 L304.25 1118 L304.3 1118.0 " fill="none"></path>
+					<path d="M269.3 1049.4 L265.2 1052.9 L261.2 1056.4 L256.5 1042.8 Z"></path>
+					<path d="M0.0 617.7 L-20.5 641 L-20.5 715 L-20.5 715 L-20.5 789 L-20.5 789 L79.31678798860356 869.7418520640798 L79.3 869.7 " fill="none"></path>
+					<path d="M70.8 869.7 L79.3 869.7 L77.5 861.4 L84.5 873.9 Z"></path>
+					<path d="M109.0 621.0 L109 641 L109 654.3333333333334 L109.0 654.3 " fill="none"></path>
+					<path d="M103.7 647.7 L109.0 654.3 L114.3 647.7 L109.0 661.0 Z"></path>
+					<path d="M109.0 769.0 L109 789 L114.49559891400162 802.8060167839553 L114.5 802.8 " fill="none"></path>
+					<path d="M107.1 798.6 L114.5 802.8 L117.0 794.6 L117.0 809.0 Z"></path>
+					<path d="M607.5 108.0 L607.5 128 L607.5 154.33333333333334 L607.5 154.3 " fill="none"></path>
+					<path d="M602.2 147.7 L607.5 154.3 L612.8 147.7 L607.5 161.0 Z"></path>
+					<g data-name="Program">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Program">
+							<rect x="123.5" y="38.5" height="31.0" width="83.0" data-name="Program"></rect>
+						</g>
+						<g transform="translate(123.5, 38.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Program">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Program">
+								<text x="33.5" y="13.5" stroke="none" text-anchor="middle" data-name="Program">Program</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Person">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Person">
+							<rect x="246.5" y="0.0" height="108.0" width="83.0" data-name="Person"></rect>
+							<path d="M246.5 31.0 L329.5 31.0" fill="none" data-name="Person"></path>
+							<path d="M246.5 62.0 L329.5 62.0" fill="none" data-name="Person"></path>
+						</g>
+						<g transform="translate(246.5, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Person">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Person">
+								<text x="33.5" y="13.5" stroke="none" text-anchor="middle" data-name="Person">Person</text>
+								
+							</g>
+						</g>
+						<g transform="translate(246.5, 31)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Person">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Person">
+								<text x="0.0" y="13.5" stroke="none" data-name="Person">ID: Int32</text>
+								
+							</g>
+						</g>
+						<g transform="translate(246.5, 62)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Person">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Person">
+								<text x="0.0" y="13.5" stroke="none" data-name="Person">get_ID()</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Person">set_ID()</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Teacher">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Teacher">
+							<rect x="141.3" y="148.0" height="179.0" width="169.0" data-name="Teacher"></rect>
+							<path d="M141.3 179.0 L310.3 179.0" fill="none" data-name="Teacher"></path>
+							<path d="M141.3 281.0 L310.3 281.0" fill="none" data-name="Teacher"></path>
+						</g>
+						<g transform="translate(141.25, 148)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Teacher">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Teacher">
+								<text x="76.5" y="13.5" stroke="none" text-anchor="middle" data-name="Teacher">Teacher</text>
+								
+							</g>
+						</g>
+						<g transform="translate(141.25, 179)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Teacher">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Teacher">
+								<text x="0.0" y="13.5" stroke="none" data-name="Teacher">Subjects: Subject</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Teacher">ID: Int32</text>
+								<g transform="translate(20, 20)" data-name="Teacher">
+									<g >
+										<g fill="#fdf6e3" stroke="#33322E">
+											<rect x="0.0" y="0.0" height="8.0" width="0.0"></rect>
+										</g>
+										<g transform="translate(0, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal">
+											<g transform="translate(8, 8)" fill="#33322E">
+												
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+						<g transform="translate(141.25, 281)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Teacher">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Teacher">
+								<text x="0.0" y="13.5" stroke="none" data-name="Teacher">get_Subjects()</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Teacher">set_Subjects()</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Subject">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Subject">
+							<rect x="0.0" y="367.0" height="254.0" width="218.0" data-name="Subject"></rect>
+							<path d="M0.0 398.0 L218.0 398.0" fill="none" data-name="Subject"></path>
+							<path d="M0.0 515.0 L218.0 515.0" fill="none" data-name="Subject"></path>
+						</g>
+						<g transform="translate(0, 367)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Subject">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Subject">
+								<text x="101.0" y="13.5" stroke="none" text-anchor="middle" data-name="Subject">Subject</text>
+								
+							</g>
+						</g>
+						<g transform="translate(0, 398)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Subject">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Subject">
+								<text x="0.0" y="13.5" stroke="none" data-name="Subject">Name: String</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Subject">Students: Student</text>
+								<text x="0.0" y="43.5" stroke="none" data-name="Subject">Gradebook: Gradebook</text>
+								<g transform="translate(20, 20)" data-name="Subject">
+									<g >
+										<g fill="#fdf6e3" stroke="#33322E">
+											<rect x="0.0" y="0.0" height="8.0" width="0.0"></rect>
+										</g>
+										<g transform="translate(0, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal">
+											<g transform="translate(8, 8)" fill="#33322E">
+												
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+						<g transform="translate(0, 515)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Subject">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Subject">
+								<text x="0.0" y="13.5" stroke="none" data-name="Subject">get_Name()</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Subject">set_Name()</text>
+								<text x="0.0" y="43.5" stroke="none" data-name="Subject">get_Students()</text>
+								<text x="0.0" y="58.5" stroke="none" data-name="Subject">set_Students()</text>
+								<text x="0.0" y="73.5" stroke="none" data-name="Subject">get_Gradebook()</text>
+								<text x="0.0" y="88.5" stroke="none" data-name="Subject">set_Gradebook()</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Professor">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Professor">
+							<rect x="258.0" y="397.0" height="194.0" width="169.0" data-name="Professor"></rect>
+							<path d="M258.0 428.0 L427.0 428.0" fill="none" data-name="Professor"></path>
+							<path d="M258.0 545.0 L427.0 545.0" fill="none" data-name="Professor"></path>
+						</g>
+						<g transform="translate(258, 397)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Professor">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Professor">
+								<text x="76.5" y="13.5" stroke="none" text-anchor="middle" data-name="Professor">Professor</text>
+								
+							</g>
+						</g>
+						<g transform="translate(258, 428)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Professor">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Professor">
+								<text x="0.0" y="13.5" stroke="none" data-name="Professor">Courses: String</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Professor">Subjects: Subject</text>
+								<text x="0.0" y="43.5" stroke="none" data-name="Professor">ID: Int32</text>
+								<g transform="translate(20, 20)" data-name="Professor">
+									<g >
+										<g fill="#fdf6e3" stroke="#33322E">
+											<rect x="0.0" y="0.0" height="8.0" width="0.0"></rect>
+										</g>
+										<g transform="translate(0, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal">
+											<g transform="translate(8, 8)" fill="#33322E">
+												
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+						<g transform="translate(258, 545)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Professor">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Professor">
+								<text x="0.0" y="13.5" stroke="none" data-name="Professor">get_Courses()</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Professor">set_Courses()</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Student">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Student">
+							<rect x="84.5" y="809.0" height="269.0" width="172.0" data-name="Student"></rect>
+							<path d="M84.5 840.0 L256.5 840.0" fill="none" data-name="Student"></path>
+							<path d="M84.5 972.0 L256.5 972.0" fill="none" data-name="Student"></path>
+						</g>
+						<g transform="translate(84.5, 809)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Student">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Student">
+								<text x="78.0" y="13.5" stroke="none" text-anchor="middle" data-name="Student">Student</text>
+								
+							</g>
+						</g>
+						<g transform="translate(84.5, 840)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Student">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Student">
+								<text x="0.0" y="13.5" stroke="none" data-name="Student">Name: Int32</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Student">Address: Address</text>
+								<text x="0.0" y="43.5" stroke="none" data-name="Student">Subjects: Subject</text>
+								<text x="0.0" y="58.5" stroke="none" data-name="Student">ID: Int32</text>
+								<g transform="translate(20, 20)" data-name="Student">
+									<g >
+										<g fill="#fdf6e3" stroke="#33322E">
+											<rect x="0.0" y="0.0" height="8.0" width="0.0"></rect>
+										</g>
+										<g transform="translate(0, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal">
+											<g transform="translate(8, 8)" fill="#33322E">
+												
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+						<g transform="translate(84.5, 972)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Student">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Student">
+								<text x="0.0" y="13.5" stroke="none" data-name="Student">get_Name()</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Student">set_Name()</text>
+								<text x="0.0" y="43.5" stroke="none" data-name="Student">get_Address()</text>
+								<text x="0.0" y="58.5" stroke="none" data-name="Student">set_Address()</text>
+								<text x="0.0" y="73.5" stroke="none" data-name="Student">get_Subjects()</text>
+								<text x="0.0" y="88.5" stroke="none" data-name="Student">set_Subjects()</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Address">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Address">
+							<rect x="46.3" y="1131.0" height="198.0" width="119.0" data-name="Address"></rect>
+							<path d="M46.3 1162.0 L165.3 1162.0" fill="none" data-name="Address"></path>
+							<path d="M46.3 1223.0 L165.3 1223.0" fill="none" data-name="Address"></path>
+						</g>
+						<g transform="translate(46.25, 1131)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Address">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Address">
+								<text x="51.5" y="13.5" stroke="none" text-anchor="middle" data-name="Address">Address</text>
+								
+							</g>
+						</g>
+						<g transform="translate(46.25, 1162)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Address">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Address">
+								<text x="0.0" y="13.5" stroke="none" data-name="Address">Street: String</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Address">City: String</text>
+								<text x="0.0" y="43.5" stroke="none" data-name="Address">ZIP: Int32</text>
+								
+							</g>
+						</g>
+						<g transform="translate(46.25, 1223)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Address">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Address">
+								<text x="0.0" y="13.5" stroke="none" data-name="Address">get_Street()</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Address">set_Street()</text>
+								<text x="0.0" y="43.5" stroke="none" data-name="Address">get_City()</text>
+								<text x="0.0" y="58.5" stroke="none" data-name="Address">set_City()</text>
+								<text x="0.0" y="73.5" stroke="none" data-name="Address">get_ZIP()</text>
+								<text x="0.0" y="88.5" stroke="none" data-name="Address">set_ZIP()</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="RemoteStudent">
+						<g fill="#eee8d5" stroke="#33322E" data-name="RemoteStudent">
+							<rect x="205.3" y="1118.0" height="224.0" width="198.0" data-name="RemoteStudent"></rect>
+							<path d="M205.3 1149.0 L403.3 1149.0" fill="none" data-name="RemoteStudent"></path>
+							<path d="M205.3 1296.0 L403.3 1296.0" fill="none" data-name="RemoteStudent"></path>
+						</g>
+						<g transform="translate(205.25, 1118)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="RemoteStudent">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="RemoteStudent">
+								<text x="91.0" y="13.5" stroke="none" text-anchor="middle" data-name="RemoteStudent">RemoteStudent</text>
+								
+							</g>
+						</g>
+						<g transform="translate(205.25, 1149)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="RemoteStudent">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="RemoteStudent">
+								<text x="0.0" y="13.5" stroke="none" data-name="RemoteStudent">SourceSchool: String</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="RemoteStudent">Name: Int32</text>
+								<text x="0.0" y="43.5" stroke="none" data-name="RemoteStudent">Address: Address</text>
+								<text x="0.0" y="58.5" stroke="none" data-name="RemoteStudent">Subjects: Subject</text>
+								<text x="0.0" y="73.5" stroke="none" data-name="RemoteStudent">ID: Int32</text>
+								<g transform="translate(20, 20)" data-name="RemoteStudent">
+									<g >
+										<g fill="#fdf6e3" stroke="#33322E">
+											<rect x="0.0" y="0.0" height="8.0" width="0.0"></rect>
+										</g>
+										<g transform="translate(0, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal">
+											<g transform="translate(8, 8)" fill="#33322E">
+												
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+						<g transform="translate(205.25, 1296)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="RemoteStudent">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="RemoteStudent">
+								<text x="0.0" y="13.5" stroke="none" data-name="RemoteStudent">get_SourceSchool()</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="RemoteStudent">set_SourceSchool()</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Gradebook">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Gradebook">
+							<rect x="19.5" y="661.0" height="108.0" width="179.0" data-name="Gradebook"></rect>
+							<path d="M19.5 692.0 L198.5 692.0" fill="none" data-name="Gradebook"></path>
+							<path d="M19.5 723.0 L198.5 723.0" fill="none" data-name="Gradebook"></path>
+						</g>
+						<g transform="translate(19.5, 661)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Gradebook">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Gradebook">
+								<text x="81.5" y="13.5" stroke="none" text-anchor="middle" data-name="Gradebook">Gradebook</text>
+								
+							</g>
+						</g>
+						<g transform="translate(19.5, 692)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Gradebook">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Gradebook">
+								<text x="0.0" y="13.5" stroke="none" data-name="Gradebook">Grades: Dictionary`2</text>
+								
+							</g>
+						</g>
+						<g transform="translate(19.5, 723)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Gradebook">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Gradebook">
+								<text x="0.0" y="13.5" stroke="none" data-name="Gradebook">get_Grades()</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Gradebook">set_Grades()</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="StudentRecords">
+						<g fill="#eee8d5" stroke="#33322E" data-name="StudentRecords">
+							<rect x="536.0" y="0.0" height="108.0" width="143.0" data-name="StudentRecords"></rect>
+							<path d="M536.0 31.0 L679.0 31.0" fill="none" data-name="StudentRecords"></path>
+							<path d="M536.0 62.0 L679.0 62.0" fill="none" data-name="StudentRecords"></path>
+						</g>
+						<g transform="translate(536, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="StudentRecords">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="StudentRecords">
+								<text x="63.5" y="13.5" stroke="none" text-anchor="middle" data-name="StudentRecords">StudentRecords</text>
+								
+							</g>
+						</g>
+						<g transform="translate(536, 31)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="StudentRecords">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="StudentRecords">
+								<text x="0.0" y="13.5" stroke="none" data-name="StudentRecords">Grades: List`1</text>
+								
+							</g>
+						</g>
+						<g transform="translate(536, 62)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="StudentRecords">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="StudentRecords">
+								<text x="0.0" y="13.5" stroke="none" data-name="StudentRecords">get_Grades()</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="StudentRecords">set_Grades()</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Grade">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Grade">
+							<rect x="519.5" y="161.0" height="153.0" width="176.0" data-name="Grade"></rect>
+							<path d="M519.5 192.0 L695.5 192.0" fill="none" data-name="Grade"></path>
+							<path d="M519.5 238.0 L695.5 238.0" fill="none" data-name="Grade"></path>
+						</g>
+						<g transform="translate(519.5, 161)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Grade">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Grade">
+								<text x="80.0" y="13.5" stroke="none" text-anchor="middle" data-name="Grade">Grade</text>
+								
+							</g>
+						</g>
+						<g transform="translate(519.5, 192)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Grade">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Grade">
+								<text x="0.0" y="13.5" stroke="none" data-name="Grade">DateTime: DateTime</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Grade">Value: Int32</text>
+								
+							</g>
+						</g>
+						<g transform="translate(519.5, 238)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Grade">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Grade">
+								<text x="0.0" y="13.5" stroke="none" data-name="Grade">get_DateTime()</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="Grade">set_DateTime()</text>
+								<text x="0.0" y="43.5" stroke="none" data-name="Grade">get_Value()</text>
+								<text x="0.0" y="58.5" stroke="none" data-name="Grade">set_Value()</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="DiagramPersistence">
+						<g fill="#eee8d5" stroke="#33322E" data-name="DiagramPersistence">
+							<rect x="719.0" y="23.0" height="62.0" width="175.0" data-name="DiagramPersistence"></rect>
+							<path d="M719.0 54.0 L894.0 54.0" fill="none" data-name="DiagramPersistence"></path>
+						</g>
+						<g transform="translate(719, 23)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="DiagramPersistence">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="DiagramPersistence">
+								<text x="79.5" y="13.5" stroke="none" text-anchor="middle" data-name="DiagramPersistence">DiagramPersistence</text>
+								
+							</g>
+						</g>
+						<g transform="translate(719, 54)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="DiagramPersistence">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="DiagramPersistence">
+								<text x="0.0" y="13.5" stroke="none" data-name="DiagramPersistence">SaveSvgToFile()</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="KrokiClient">
+						<g fill="#eee8d5" stroke="#33322E" data-name="KrokiClient">
+							<rect x="934.0" y="23.0" height="62.0" width="216.0" data-name="KrokiClient"></rect>
+							<path d="M934.0 54.0 L1150.0 54.0" fill="none" data-name="KrokiClient"></path>
+						</g>
+						<g transform="translate(934, 23)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="KrokiClient">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="KrokiClient">
+								<text x="100.0" y="13.5" stroke="none" text-anchor="middle" data-name="KrokiClient">KrokiClient</text>
+								
+							</g>
+						</g>
+						<g transform="translate(934, 54)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="KrokiClient">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="KrokiClient">
+								<text x="0.0" y="13.5" stroke="none" data-name="KrokiClient">GenerateDiagramAsync()</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="ReflectionTools">
+						<g fill="#eee8d5" stroke="#33322E" data-name="ReflectionTools">
+							<rect x="1190.0" y="15.5" height="77.0" width="210.0" data-name="ReflectionTools"></rect>
+							<path d="M1190.0 46.5 L1400.0 46.5" fill="none" data-name="ReflectionTools"></path>
+						</g>
+						<g transform="translate(1190, 15.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="ReflectionTools">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="ReflectionTools">
+								<text x="97.0" y="13.5" stroke="none" text-anchor="middle" data-name="ReflectionTools">ReflectionTools</text>
+								
+							</g>
+						</g>
+						<g transform="translate(1190, 46.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ReflectionTools">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="ReflectionTools">
+								<text x="0.0" y="13.5" stroke="none" data-name="ReflectionTools">AnalyzeAssembly()</text>
+								<text x="0.0" y="28.5" stroke="none" data-name="ReflectionTools">IsRelationshipInherited()</text>
+								
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
