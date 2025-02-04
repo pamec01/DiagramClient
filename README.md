@@ -13,4 +13,4 @@ _**DiagramMaker/KrokiClient.cs**_
 třída pro komunikaci se službou Kroki
 
 _**DiagramMaker/DiagramPersistence.cs**_
-třída pro uložení výsledného diagramu.
+třída pro uložení výsledného diagramu do _diagram.svg_.
